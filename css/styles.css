@@ -96,8 +96,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px 0px;
+    padding: 30px
 }
 
 h2{
@@ -114,6 +113,11 @@ h2{
   margin-bottom: 160px;
   text-shadow: 3px 3px 3px #00000077;
 }
+
+.LogoClientes2{
+    margin-top: 20px;
+}
+
 
 .LogoClientes1 a img, .LogoClientes2 a img{
     filter:grayscale(100%);
