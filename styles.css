@@ -91,14 +91,6 @@ h1{
     font-style: normal;
 }
 
-.LogoClientes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px
-}
-
 h2{
     text-align: center;
     background-color: yellow;
@@ -112,21 +104,6 @@ h2{
   font-size: 64px;
   margin-bottom: 160px;
   text-shadow: 3px 3px 3px #00000077;
-}
-
-.LogoClientes2{
-    margin-top: 20px;
-}
-
-
-.LogoClientes1 a img, .LogoClientes2 a img{
-    filter:grayscale(100%);
-    opacity: 0.5;
-}
-
-.LogoClientes1 a img:hover, .LogoClientes2 a img:hover{
-    filter:grayscale(0%);
-    opacity: 1;
 }
 
 #ContadorEmDiadema{
@@ -245,10 +222,6 @@ ul.links-group li a:hover {
     gap: 20px; /* gap maior para telas menores */
     align-items: center;
   
-  }
-  .LogoClientes{
-    align-items: center;
-    flex-direction: row;
   }
 }
 
@@ -476,27 +449,6 @@ footer p{
   }
 }
 
-
-
-@media(max-width: 768px){
-  .LogoClientes{
-
-    margin-left: 50px;
-  }
-}
-
-@media(max-width: 576px){
-  .LogoClientes{
-   flex-wrap: wrap;
-  }
-
-  .LogoClientes img {
-    width: 80%;
-    margin-bottom: 100px;
-
-}
-}
-
 #img-serviços img {
   width: 100%;
   max-width: 300px;
@@ -546,4 +498,42 @@ main#pagina-serviços{
     max-width: 500px;
     min-width: 300px;
   }
+}
+
+.slider{
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250*17);
+}
+
+.slider .slide{
+  height: 100px;
+  width: 250px;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px*9));
+  }
+}
+
+.slide a img{
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.slide a img:hover{
+  opacity: 1;
+  filter: grayscale(0%);
 }
